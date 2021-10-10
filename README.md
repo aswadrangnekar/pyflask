@@ -13,5 +13,7 @@ $ python -m unittest discover . -vvvv "test_*.py"
 $ python3 -m unittest discover . -vvvv -p "test_*.py"
 
 # tag the image as below
-docker build . -t "pyflask:v0.1.$(git rev-parse --short HEAD)"
+docker build . -t "aswadrangnekar/pyflaskapp:v0.1.$(git rev-parse --short HEAD)"
 
+# push the image to dockerhub
+docker push aswadrangnekar/pyflaskapp:v0.1.$(git rev-parse --short HEAD)
