@@ -18,4 +18,3 @@ docker build . -t "aswadrangnekar/pyflaskapp:v0.1.$(git rev-parse --short HEAD)"
 # push the image to dockerhub
 docker push aswadrangnekar/pyflaskapp:v0.1.$(git rev-parse --short HEAD)
 
-t
